@@ -1,0 +1,225 @@
+/* FONT ADD */
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+/* RESET */
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+/* UTILITY CLASSES */
+
+
+/* VARIABLES */
+:root{
+    --BGCOLOR:white;
+    --MAINTEXTCOLOR:black;
+    --HEADINGCOLOR:#A435F0;
+    --HOVERCOLOR1:gray;
+
+    
+}
+
+/* GENERAL STYLES */
+
+body{
+    font-family: "Gabarito", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    background-color: var(--BGCOLOR);
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 50px;
+    align-items: center;
+    position:sticky;
+
+}
+.navbar{
+    top: 0px;
+}
+
+.navbar-s1__title{
+    color:var(--HEADINGCOLOR) ; 
+
+}
+
+.navbar-s2{
+    display: flex;
+    padding: 10px;
+    border:2px solid black;
+    border-radius: 25px;
+    width: 60%;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.navbar-s2__search:focus{
+    outline: none;
+}
+
+.navbar-s2__search{
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    
+
+}
+
+.navbar-s3{
+    padding: 10px;
+    display:flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-s3__title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar-s3__title:where(:hover,:focus){
+    background-color: var(--BGCOLOR);
+    color: var(--HEADINGCOLOR);
+}
+
+.sub-bar P:where(:hover,:focus){
+    background-color: var(--BGCOLOR);
+    color: var(--HEADINGCOLOR);
+    border: 1px solid black;
+    transition-duration: 1s;
+    
+}
+.bx{
+    font-size: 21px;
+    margin-left: 10px;
+}
+
+.sub-bar{
+    display: flex;
+    background-color: var(--BGCOLOR);
+    padding: 10px;
+    border-bottom: 1px solid black;
+    justify-content: space-around;
+}
+
+
+.sub-bar__title{
+    background-color:var(--HEADINGCOLOR);
+    padding: 10px;
+    color: var(--BGCOLOR);
+    border-radius: 30px;
+}
+
+.sale-image{
+    position: relative;
+}
+
+.sale-image img{
+    width: 100%;
+    
+}
+.screen-bar{
+    position: absolute;
+    background-color:rgba(255, 255,255,0.8);
+    width: 440px;
+    height: 140px;
+    top: 0;
+    left: 0;
+    margin-top: 240px;
+    margin-left: 100px;
+    box-shadow: 5px 5px 10px 0.2px black;
+    border-radius: 6px;
+ 
+}
+
+
+:where(.screen-bar__title,.screen-bar__subtitle){
+    padding: 15px;
+    text-align: center;
+}
+
+.recommended{
+    padding: 10px;
+
+}
+
+.recommended-cards{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.course-card{
+    width: 300px;
+    
+}
+
+
+
+.course-card img{
+    
+    width: 100%;
+    height: 70%;
+}
+
+.topic{
+    padding: 10px;
+}
+.topic__container{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    
+}
+.topic__container p{
+    border: 1px solid black;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+.topic__container p:hover{
+    background-color: var(--HOVERCOLOR1);
+    color: var(--BGCOLOR);
+}
+
+.popular-cards{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.popular{
+    padding: 10px;
+}
+
+.footer
+{
+    background-color: var(--MAINTEXTCOLOR);
+    color: var(--BGCOLOR);
+    padding: 30px;
+
+}
+.footer__one{
+    display: flex;
+    gap: 35px;
+    margin-top: 10px;
+}
+:where(.footer__one__s1,.footer__one__s2){
+    line-height: 45px;
+}
+
+.footer__two{
+   padding: 30px; 
+   display: flex;
+   justify-content: space-between;
+}
